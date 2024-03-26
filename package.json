@@ -1,0 +1,39 @@
+{
+  "name": "nostrumsed",
+  "type": "module",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "dev": "run-p dev:**",
+    "dev:package:transport": "pnpm --filter @ethernauta/transport run dev",
+    "dev:package:connector": "pnpm --filter @ethernauta/connector run dev",
+    "dev:package:eth": "pnpm --filter @ethernauta/eth run dev",
+    "dev:package:sol": "pnpm --filter @ethernauta/sol run dev",
+    "build": "pnpm --recursive --sort run build",
+    "lint": "pnpm --recursive run lint",
+    "lint:fix": "pnpm --recursive run lint:fix",
+    "version": "changeset version",
+    "publish": "changeset publish"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.6.1",
+    "@changesets/cli": "^2.27.1",
+    "@types/node": "20.10.5",
+    "eslint": "~8.56.0",
+    "eslint-plugin-format": "^0.1.0",
+    "npm-run-all": "^4.1.5",
+    "typescript": "~5.3.3",
+    "vite": "~5.0.10",
+    "vite-plugin-dts": "~3.7.0",
+    "vitest": "~1.1.0"
+  },
+  "author": "MajorMcLaughlin",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ValentinJacobs/nostrumsed.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ValentinJacobs/nostrumsed.git/issues"
+  },
+  "homepage": "https://github.com/ValentinJacobs/nostrumsed.git"
+}
